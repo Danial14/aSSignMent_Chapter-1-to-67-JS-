@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a onclick="showAlert('google.com')" href="#">Google</a>
+    <ul>
+        <li style="display: inline-block;" onclick="thankyou()">
+            <img src="ch_43_to_48_iMages/galaxy_j7.jpg" alt="galaxy j7">
+        </li>
+        <li style="display: inline-block;" onclick="thankyou()">
+            <img src="ch_43_to_48_iMages/oppo_f7.jpg" alt="oppo f7">
+        </li>
+        <li style="display: inline-block;" onclick="thankyou()">
+            <img src="ch_43_to_48_iMages/htc_desire_20_pro.jpg" alt="htc_desire_20_pro">
+        </li>
+        <li style="display: inline-block;" onclick="thankyou()">
+            <img src="ch_43_to_48_iMages/huawei_Mate_20_pro.jpg" alt="huawei_Mate_20_pro">
+        </li>
+    </ul>
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>NaMe</th>
+            <th>Class</th>
+        </tr>
+        <tr id="0">
+            <td>0</td>
+            <td>WaseeM</td>
+            <td>10</td>
+            <td>
+                <button onclick="deleteRecord('0')">Delete</button>
+            </td>
+        </tr>
+        <tr id="1">
+            <td>1</td>
+            <td>Abbas</td>
+            <td>9</td>
+            <td>
+                <button onclick="deleteRecord('1')">Delete</button>
+            </td>
+        </tr>
+        <tr id="2">
+            <td>2</td>
+            <td>Hussain</td>
+            <td>10</td>
+            <td>
+                <button onclick="deleteRecord('2')">Delete</button>
+            </td>
+        </tr>
+        <tr id="3">
+            <td>3</td>
+            <td>Hassan</td>
+            <td>9</td>
+            <td>
+                <button onclick="deleteRecord('3')">Delete</button>
+            </td>
+        </tr>
+        <tr id="4">
+            <td>4</td>
+            <td>AhMad</td>
+            <td>10</td>
+            <td>
+                <button onclick="deleteRecord('4')">Delete</button>
+            </td>
+        </tr>
+        <tr id="5">
+            <td>5</td>
+            <td>Abu Bakar</td>
+            <td>9</td>
+            <td>
+                <button onclick="deleteRecord('5')">Delete</button>
+            </td>
+        </tr>
+        <tr id="6">
+            <td>6</td>
+            <td>UMar</td>
+            <td>10</td>
+            <td>
+                <button onclick="deleteRecord('6')">Delete</button>
+            </td>
+        </tr>
+        <tr id="7">
+            <td>7</td>
+            <td>UsMan</td>
+            <td>9</td>
+            <td>
+                <button onclick="deleteRecord('7')">Delete</button>
+            </td>
+        </tr>
+        <tr id="8">
+            <td>8</td>
+            <td>Ali</td>
+            <td>10</td>
+            <td>
+                <button onclick="deleteRecord('8')">Delete</button>
+            </td>
+        </tr>
+        <tr id="9">
+            <td>9</td>
+            <td>HaMza</td>
+            <td>9</td>
+            <td>
+                <button onclick="deleteRecord('9')">Delete</button>
+            </td>
+        </tr>
+    </table>
+    <!-- Task no4 -->
+    <img id="Mobile" src="ch_43_to_48_iMages/galaxy_j7.jpg" onmouseover="changeIMage('Mobile')" onmouseout="src='ch_43_to_48_iMages/galaxy_j7.jpg'">
+    <p id="counter">0</p>
+    <input type="button" value="Start counter" onclick="startCounter()">
+    <input type="button" value="IncreMent counter" onclick="stopCounter(true)">
+    <input type="button" value="DecreMent counter" onclick="stopCounter(false)">
+    <script src="ch_43_to_48.js"></script>
+</body>
+</html>

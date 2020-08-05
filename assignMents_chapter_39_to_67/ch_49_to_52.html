@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="rec" method="GET">
+        <label>NaMe : 
+            <input type="text" required>
+        </label>
+        <br>
+        <br>
+        <label>EMail :
+            <input type="email" required>
+        </label>
+        <br>
+        <br>
+        <label>Password :
+            <input type="password" required>
+        </label>
+        <br>
+        <br>
+        <input type="submit" onclick="displayUserData()">
+    </form>
+    <p>Shown content
+        <p style="visibility: hidden;" id="hi">Hidden content</p>
+    </p>
+    <button onclick="showContent()" id="toggle">Read More</button>
+    <h2>Student data forM</h2>
+    <form id="stu" action="#">
+        <label>NaMe : 
+            <input type="text" required>
+        </label>
+        <br>
+        <br>
+        <label>EMail :
+            <input type="email" required>
+        </label>
+        <br>
+        <br>
+        <label>Password :
+            <input type="password" required>
+        </label>
+        <br>
+        <br>
+        <input type="submit" onclick="populateTable()">
+    </form>
+    <table id="stu_rec">
+        <tr>
+            <th>NaMe</th>
+            <th>EMail</th>
+            <th>Password</th>
+            <th>Delete record</th>
+            <th>Edit record</th>
+        </tr>
+    </table>
+    <form action="#" id="stu_hidden" style="visibility: hidden;">
+        <label>NaMe : 
+            <input type="text" required>
+        </label>
+        <br>
+        <br>
+        <label>EMail :
+            <input type="email" required>
+        </label>
+        <br>
+        <br>
+        <label>Password :
+            <input type="password" required>
+        </label>
+        <br>
+        <br>
+        <input type="submit" onclick="updateRecord()">
+    </form>
+    <script src="ch_49_to_52.js"></script>
+</body>
+</html>
